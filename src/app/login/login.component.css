@@ -1,0 +1,71 @@
+.example-card {
+  max-width: 440px;
+  background-color: ivory;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.center-content{
+  text-align: -webkit-center;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.mat-card{
+  margin-top: 50px;
+}
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+.mat-raised-button{
+  width: 100%;
+  margin-top: 17px;
+}
+
+.mat-form-field-appearance-fill{
+  width: 400px;
+}  
+.forget{
+  font-size: 14px;
+  text-decoration: none;
+}
+/* .Sign{
+  margin-left: 10px;
+  text-decoration: none;
+} */

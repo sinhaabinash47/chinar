@@ -1,0 +1,22 @@
+.footer{
+    background-color: black;
+}
+a {
+    color: white;
+    /* text-decoration: underline; */
+    text-decoration: none;
+}
+.mx-auto {
+    text-align: start;
+    text-decoration: none;
+    text-align: start;
+}
+.RB8ET {
+    border-bottom: 1px solid #4d4d4d;
+    padding: 30px 0 40px;
+}
+.btn-primary {
+    color: #fff;
+    /* background-color: #0d6efd; */
+    border-color: #0d6efd;
+}

@@ -1,0 +1,57 @@
+<div class="cont">
+    <div class="banner">
+        <img src="./assets/image/banner.jpg">
+        <div class="centered">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sunt aliquid assumenda non error
+                rem amet doloremque quidem ab nisi suscipit cum, accusantium quo temporibus recusandae sit laborum fuga
+                delectus!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, esse cum harum quasi aliquid asperiores
+                quam porro.
+                Tenetur soluta vitae sunt repellat, ad, voluptatum fugiat asperiores facere, sed natus aliquam?
+            </p>
+        </div>
+    </div>
+</div>
+<div class="rest">
+    <h4><b>CHOOSE YOUR RESTAURANT</b></h4>
+</div>
+<app-search></app-search>
+<ul>
+    <li *ngFor="let food of foods">
+        <a routerLink="/food/{{food.id}}">
+            <img src="{{food.imageUrl}}" alt="food">
+            <div class="content">
+                <div class="name">
+                    {{food.name}}
+                </div>
+                <span class="favorite {{food.favorite?'':'not'}}">❤️</span>
+                <label for="" class="star">
+                    <!-- <ngx-star-rating>
+                    [value] = "food.star"
+                    [totalstars] = "5"
+                    checkedcolor="red"
+                    uncheckedcolor="black"
+                    size="24px"
+                    [readonly]="true"
+                </ngx-star-rating> -->
+                </label>
+                <div class="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let origin of food.origins">
+                            {{origin}}
+                        </span>
+                    </div>
+                    <div class="cook-time">
+                        <span>🕐</span>
+                        {{food.cookTime}}
+                    </div>
+                </div>
+                <div class="price">
+                    {{food.price | currency}}
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<app-style></app-style>
+<!-- <app-chat></app-chat> -->

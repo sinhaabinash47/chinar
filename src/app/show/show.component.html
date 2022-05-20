@@ -1,0 +1,20 @@
+<div class="rest">
+    <h4><b><u>CHOOSE YOUR TEST</u></b></h4>
+</div>
+
+<div class="cl">
+<ul>
+    <li *ngFor="let show of show">
+        <a routerLink="/food/wine{{show.name}}">
+            <img src="{{show.imageUrl}}" alt="wine">
+            <div class="content">
+                <div class="name">
+                    {{show.name}}
+                </div>
+                <!-- <span class="favorite {{show.favorite?'':'not'}}">❤️</span> -->
+            </div>
+        </a>
+    </li>
+</ul>
+</div>
+<app-footer></app-footer>

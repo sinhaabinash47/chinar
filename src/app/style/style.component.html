@@ -1,0 +1,18 @@
+<div class="rest">
+    <h4><b><u>CHOOSE YOUR TEST</u></b></h4>
+</div>
+
+<ul>
+    <li *ngFor="let wine of wine">
+        <a routerLink="/food/wine{{wine.name}}">
+            <img src="{{wine.imageUrl}}" alt="wine">
+            <div class="content">
+                <div class="name">
+                    {{wine.name}}
+                </div>
+                <span class="favorite {{wine.favorite?'':'not'}}">❤️</span>
+            </div>
+        </a>
+    </li>
+</ul>
+<app-show></app-show>
